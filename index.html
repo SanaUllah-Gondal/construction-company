@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BuildRight Constructions | Quality Homes & Buildings</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Build<span>Right</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#designs">Designs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Build Your Dream Home With Confidence</h2>
+      <p>Professional construction services for homes, commercial buildings, and custom designs.</p>
+      <a href="#contact" class="btn">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-home fa-3x"></i>
+          <h3>Residential Construction</h3>
+          <p>End-to-end home building: from foundation to finishing.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-building fa-3x"></i>
+          <h3>Commercial Buildings</h3>
+          <p>Office complexes, retail spaces, and industrial structures.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-tools fa-3x"></i>
+          <h3>Renovation & Remodeling</h3>
+          <p>Transform old spaces into modern, functional areas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Materials Section -->
+  <section id="materials" class="section bg-light">
+    <div class="container">
+      <h2>Construction Materials</h2>
+      <div class="materials-grid" id="materialsGrid">
+        <!-- Dynamically populated via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Selections -->
+  <section id="designs" class="section">
+    <div class="container">
+      <h2>Design Selections</h2>
+      <div class="design-tabs">
+        <button class="tab-btn active" data-tab="modern">Modern</button>
+        <button class="tab-btn" data-tab="classic">Classic</button>
+        <button class="tab-btn" data-tab="eco">Eco-Friendly</button>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane active" id="modern">
+          <p>✔ Clean lines, open spaces, large windows, energy-efficient systems.</p>
+          <img src="assets/images/modern.jpg" alt="Modern Design" class="design-img">
+        </div>
+        <div class="tab-pane" id="classic">
+          <p>✔ Ornate details, symmetry, traditional materials like wood & stone.</p>
+          <img src="assets/images/classic.jpg" alt="Classic Design">
+        </div>
+        <div class="tab-pane" id="eco">
+          <p>✔ Solar panels, recycled materials, rainwater harvesting, natural ventilation.</p>
+          <img src="assets/images/eco.jpg" alt="Eco Design">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="message" placeholder="Project Details or Questions" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 BuildRight Constructions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
